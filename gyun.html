@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_356122872bba4aa086d160bf9e24dc65 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_356122872bba4aa086d160bf9e24dc65" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_356122872bba4aa086d160bf9e24dc65 = L.map(
+        'map_356122872bba4aa086d160bf9e24dc65', {
+        center: [37.5788408, 126.9770162],
+        zoom: 17,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_4171356843ab4bb487f537e230b3afc0 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_356122872bba4aa086d160bf9e24dc65);
+    
+        var marker_7d8e88715fc34b7393bb2d08eb77bae3 = L.marker(
+            [37.5788408, 126.9770162],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_356122872bba4aa086d160bf9e24dc65);
+        
+    
+
+                var icon_8044537bb1ac4f65994170a0db7df004 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7d8e88715fc34b7393bb2d08eb77bae3.setIcon(icon_8044537bb1ac4f65994170a0db7df004);
+            
+    
+            var popup_6219bb937adc4109b65a83f7469595f4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6618c14410ee46c69246e6fce3fe6bd4 = $('<div id="html_6618c14410ee46c69246e6fce3fe6bd4" style="width: 100.0%; height: 100.0%;">경복궁</div>')[0];
+                popup_6219bb937adc4109b65a83f7469595f4.setContent(html_6618c14410ee46c69246e6fce3fe6bd4);
+            
+
+            marker_7d8e88715fc34b7393bb2d08eb77bae3.bindPopup(popup_6219bb937adc4109b65a83f7469595f4)
+            ;
+
+            
+        
+</script>
